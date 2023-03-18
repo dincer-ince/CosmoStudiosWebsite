@@ -114,7 +114,7 @@ const Landing = () => {
             <Left>
                 <Title>Think. Make. Solve.</Title>
                 <WhatWeDo>
-                    <Line src="./public/img/line.png" />
+                    <Line src="/img/line.png" />
                     <Subtitle>Cosmo Studios</Subtitle>
                 </WhatWeDo>
                 <Desc>We enjoy creating delightful, human-centered digital experiences.</Desc>
@@ -135,7 +135,7 @@ const Landing = () => {
                     </Sphere>
                     </Suspense>
                 </Canvas>
-                <Img src="./public/img/octopus.png"/>
+                <Img src="/img/octopus.png"/>
             </Right>
         </Container>
     </Section>

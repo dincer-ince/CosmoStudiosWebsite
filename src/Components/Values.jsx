@@ -105,7 +105,7 @@ function CardValues({align,text,title,textAlign,color}){
   if(align ==='end'){
     return(<Split>
       <PrincipleImg>
-      <img width={150} height={150} src='./public/img/octopus.png'/>
+      <img width={150} height={150} src='/img/octopus.png'/>
       </PrincipleImg>
       
     <Card color={color} text={textAlign} align={align}>
@@ -122,7 +122,7 @@ function CardValues({align,text,title,textAlign,color}){
       <p>{text}</p>
     </Card>
     <PrincipleImg>
-      <img width={150} height={150} src='./public/img/astronaut.gif'/>
+      <img width={150} height={150} src='/img/astronaut.gif'/>
       </PrincipleImg>
     </Split>)
   }
@@ -163,7 +163,7 @@ const Values = () => {
         <Rig/>
       </Canvas>
       <EstimateCard>
-        <Title>CORE PRINCIPLES</Title>
+        <Title>WHY CHOOSE US</Title>
         <CardValues color={ '255, 255, 255' } textAlign={'end'} align={'start'} text={'We are open, and we never tend to hide things; thus, we invite our customers to our slack and time-tracking tools, so they can see real data and discussions at any time they want to.'} title={'FULL TRANSPARENCY'}/>
         <CardValues color={'74, 144, 226'} align={'end'} title={'HIGHEST QUALITY POSSIBLE'}text={'We think that each game deserves not to have bugs at all, and our QA engineers do not let any, even tiny bug, show up in production.'}/>
         <CardValues color={'208, 2, 27'} textAlign={'end'} align={'start'} title={'EASY ACCESS TO PROJECT PROGRESS'} text={'We believe that the only way to build a reliable relationship is to show clients real-time progress charts, invite them to task-tracking systems and allow seeing real tasks statuses.'} />

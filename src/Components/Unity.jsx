@@ -21,4 +21,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('./public/unity-transformed.glb')
+useGLTF.preload('/unity-transformed.glb')
