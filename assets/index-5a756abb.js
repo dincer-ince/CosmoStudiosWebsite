@@ -3817,7 +3817,7 @@ bottom:0;
   width: 100px;
   background-color: #da4ea2 !important;
   color: #ffffff !important;
-`,jH=()=>Ne(NH,{children:wt(zH,{children:[wt(GH,{children:[Ne(HH,{src:"./img/logo.png"}),Ne("span",{children:"Cosmo Studios"}),wt(VH,{children:[Ne(Gp,{children:"Home"}),Ne(Gp,{children:"Studio"}),Ne(Gp,{children:"Works"}),Ne(Gp,{children:"Contact"})]})]}),Ne(WH,{children:Ne(JH,{className:"btn",children:"Hire Now"})})]})}),XH=at.div`
+`,jH=()=>Ne(NH,{children:wt(zH,{children:[wt(GH,{children:[Ne(HH,{src:"/img/logo.png"}),Ne("span",{children:"Cosmo Studios"}),wt(VH,{children:[Ne(Gp,{children:"Home"}),Ne(Gp,{children:"Studio"}),Ne(Gp,{children:"Works"}),Ne(Gp,{children:"Contact"})]})]}),Ne(WH,{children:Ne(JH,{className:"btn",children:"Hire Now"})})]})}),XH=at.div`
 height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -4132,7 +4132,7 @@ align-items: center;
   scroll-behavior: smooth;
   overflow-y: auto;
   color:white;
-  background: url("./img/bg.jpeg");
+  background: url("/img/bg.jpeg");
   scrollbar-width: none;
   &::-webkit-scrollbar{
     display: none;
