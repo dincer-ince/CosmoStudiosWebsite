@@ -3817,7 +3817,7 @@ bottom:0;
   width: 100px;
   background-color: #da4ea2 !important;
   color: #ffffff !important;
-`,jH=()=>Ne(NH,{children:wt(zH,{children:[wt(GH,{children:[Ne(HH,{src:"./public./img/logo.png"}),Ne("span",{children:"Cosmo Studios"}),wt(VH,{children:[Ne(Gp,{children:"Home"}),Ne(Gp,{children:"Studio"}),Ne(Gp,{children:"Works"}),Ne(Gp,{children:"Contact"})]})]}),Ne(WH,{children:Ne(JH,{className:"btn",children:"Hire Now"})})]})}),XH=at.div`
+`,jH=()=>Ne(NH,{children:wt(zH,{children:[wt(GH,{children:[Ne(HH,{src:"./img/logo.png"}),Ne("span",{children:"Cosmo Studios"}),wt(VH,{children:[Ne(Gp,{children:"Home"}),Ne(Gp,{children:"Studio"}),Ne(Gp,{children:"Works"}),Ne(Gp,{children:"Contact"})]})]}),Ne(WH,{children:Ne(JH,{className:"btn",children:"Hire Now"})})]})}),XH=at.div`
 height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -3976,7 +3976,7 @@ height: 100%;
     }
   }
     
-`,u6=()=>wt(r6,{children:[Ne(l6,{}),Ne(s6,{src:"./public./img/spaceship.gif"}),Ne(o6,{children:Ne(a6,{})})]}),lC=[{key:"Unity Development",value:x6(Ne(uf,{})),description:"Unity game development is one of the many services we offer at Whimsy Games. With many-year expertise in game development, our team can turn your creative ideas into excellent software and design unforgettable and totally breathtaking gameplay. We make a vibrant, immersive world with Unity engine to make your game outcompete."},{key:"2D ART",value:Ne(u6,{}),description:"Our company designs 2D characters and environments from scratch, creates the concept, and integrates vector art into your video game. With thousands of hours spent on 2D art and development, we know how to bring visionary ideas into stunning video games."},{key:"3D ART",value:Ne(uf,{})},{key:"Animation",value:Ne(uf,{})},{key:"Mobile Development",value:Ne(uf,{})},{key:"Concept Art",value:Ne(uf,{})}],c6=at.div`
+`,u6=()=>wt(r6,{children:[Ne(l6,{}),Ne(s6,{src:"./img/spaceship.gif"}),Ne(o6,{children:Ne(a6,{})})]}),lC=[{key:"Unity Development",value:x6(Ne(uf,{})),description:"Unity game development is one of the many services we offer at Whimsy Games. With many-year expertise in game development, our team can turn your creative ideas into excellent software and design unforgettable and totally breathtaking gameplay. We make a vibrant, immersive world with Unity engine to make your game outcompete."},{key:"2D ART",value:Ne(u6,{}),description:"Our company designs 2D characters and environments from scratch, creates the concept, and integrates vector art into your video game. With thousands of hours spent on 2D art and development, we know how to bring visionary ideas into stunning video games."},{key:"3D ART",value:Ne(uf,{})},{key:"Animation",value:Ne(uf,{})},{key:"Mobile Development",value:Ne(uf,{})},{key:"Concept Art",value:Ne(uf,{})}],c6=at.div`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -4132,7 +4132,7 @@ align-items: center;
   scroll-behavior: smooth;
   overflow-y: auto;
   color:white;
-  background: url("./public./img/bg.jpeg");
+  background: url("./img/bg.jpeg");
   scrollbar-width: none;
   &::-webkit-scrollbar{
     display: none;
