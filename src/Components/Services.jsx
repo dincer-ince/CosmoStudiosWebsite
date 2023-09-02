@@ -3,6 +3,7 @@ import React, { useState,useRef } from "react";
 import styled from 'styled-components';
 import Unity from './Unity'
 import TwoDArt from "./TwoDArt";
+import HountedHouse from './HauntedHouse'
 
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
@@ -18,18 +19,22 @@ import { OrbitControls, Stage } from "@react-three/drei";
 
 
 const data = [
-  {key:"Unity Development",value:Model(<Unity/>),description:"Unity game development is one of the many services we offer at Whimsy Games. With many-year expertise in game development, our team can turn your creative ideas into excellent software and design unforgettable and totally breathtaking gameplay. We make a vibrant, immersive world with Unity engine to make your game outcompete."},
+  {key:"Unity Development",value:UnityRender(),description:"Unity game development is one of the many services we offer at Cosmo Studios. With many-year expertise in game development, our team can turn your creative ideas into excellent software and design unforgettable and totally breathtaking gameplay. We make a vibrant, immersive world with Unity engine to make your game outcompete."},
   {key:"2D ART",value:<TwoDArt/>,description:"Our company designs 2D characters and environments from scratch, creates the concept, and integrates vector art into your video game. With thousands of hours spent on 2D art and development, we know how to bring visionary ideas into stunning video games."},
-  {key:"3D ART",value:<Unity/>},
-  {key:"Animation",value:<Unity/>},
-  {key:"Mobile Development",value:<Unity/>},
-  {key:"Concept Art",value:<Unity/>}
+  {key:"3D ART",value:HountedHouseRender (),description:"3D art is another service we offer at Cosmo Studios. Our talented artists can create stunning 3D models, textures, animations, and effects for your game. Whether you need realistic characters, stylized environments, or anything in between, we can deliver high-quality 3D art that suits your vision and budget. We use the latest tools and techniques to make your game look amazing and run smoothly."},
+  //{key:"Animation",value:<Unity/>},
+  {key:"Mobile Development",value:<Unity/>, description:"Mobile development is also a service we offer at Cosmo Studios. Our experienced developers can create engaging and addictive games for iOS and Android devices. We can optimize the game performance and graphics for different screen sizes and resolutions, as well as implement various features such as touch controls, accelerometer, camera, GPS, and more. We can also help you with publishing and monetizing your game on the App Store and Google Play. We make your game accessible and enjoyable for mobile users."},
+  {key:"Concept Art",value:<Unity/>, description:"Concept art is also a service we offer at Cosmo Studios. Our creative artists can produce original and captivating concept art for your game. We can help you with the visual development of your game idea, from sketches to final illustrations, from characters to environments, from props to UI. We can also work with different styles and genres, such as fantasy, sci-fi, horror, cartoon, etc. We make your game more appealing and immersive with concept art."}
 ];
 
 
 const Section = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
+@media (width>1400px) {
+height:100vh;
+
+scroll-snap-align: center;
+}
+min-height: max-content;
   display: flex;
   justify-content: center;
   position: relative;
@@ -137,16 +142,28 @@ const List = styled.ul`
   padding-left: 0px !important;
 `;
 
-function Model(input){
-  return(<Canvas>
+function UnityRender(){
+  return(<Canvas id="unity">
     <Stage environment="city" intensity={0.6}>
-      {input}
+      <Unity/>
     </Stage>
     <OrbitControls
 autoRotate
 />
   </Canvas>);
 }
+
+function HountedHouseRender(){
+  return(<Canvas id="hounted-house">
+    <Stage environment="forest" intensity={0.6}>
+      <HountedHouse/>
+    </Stage>
+    <OrbitControls
+autoRotate
+/>
+  </Canvas>);
+}
+
 
 const Services = () => {
   const [work, setWork] = useState(data[0]);

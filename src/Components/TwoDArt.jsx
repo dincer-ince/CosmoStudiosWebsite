@@ -63,7 +63,7 @@ const SpaceShip = styled.img`
 const Moon = styled.div`
     top:20px;
     left:20px;
-    background: url('/img/moon.png');
+    background: url('./public/img/moon.png');
     background-size:cover;
     background-position: center center;
     /* backdrop-filter: blur( 4px ); */
@@ -95,7 +95,7 @@ const Overlay = styled.div`
 const Stars = styled.div`
     top:-25px;
     left:-25px;
-    background: url('/img/starBackground.png');
+    background: url('./public/img/starBackground.png');
     background-size:cover;
     background-position: center center;
     position: absolute;

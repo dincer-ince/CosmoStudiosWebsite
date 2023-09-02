@@ -8,7 +8,10 @@ import { OrbitControls, Sphere, Icosahedron,MeshDistortMaterial,Text,Text3D} fro
 const Section = styled.div`
 height:100vh;
 
+@media (width>1400px) {
 scroll-snap-align: center;
+}
+
 position:relative;
 
 `;
@@ -27,13 +30,19 @@ bottom:0;
   display: flex;
   justify-content: center;
   
-  gap:50px;
+ 
+  @media (width>700px) {
+ gap:50px;
+}
 
 `;
 
 const CardWrapper = styled.div`
   height: 50%;
   width: 30%;
+  @media (width<600px) {
+width:50%;
+}
   max-height: fit-content;
   position: relative;
 `
@@ -54,7 +63,7 @@ const Card = styled.div`
 function Rig() {
   const { camera, mouse } = useThree()
   const vec = new Vector3()
-  return useFrame(() => camera.position.lerp(vec.set(mouse.x * 2, mouse.y * 1, camera.position.z), 0.01))
+  return useFrame(() => camera.position.lerp(vec.set(mouse.x * 1, mouse.y * 1, camera.position.z), 0.01))
 }
 
 function stopGoEased( x, downtime, period ) {
@@ -131,7 +140,7 @@ const Estimates = () => {
       </Container>
       <ItemContainer>
         <CardWrapper>
-        <img style={{ position:'absolute',maxWidth : '100%' , maxHeight :  '100%' }} src="/img/trophy.png"></img>
+        <img style={{ position:'absolute',maxWidth : '100%' , maxHeight :  '100%' }} src="./public/img/trophy.png"></img>
           <Card>
             <h2>Gaming Industry Experts</h2>
             <br></br>
@@ -139,7 +148,7 @@ const Estimates = () => {
           </Card>
         </CardWrapper>
         <CardWrapper>
-        <img style={{ position:'absolute',maxWidth : '100%' , maxHeight :  '100%' }} src="/img/starFigure.png"></img>
+        <img style={{ position:'absolute',maxWidth : '100%' , maxHeight :  '100%' }} src="./public/img/starFigure.png"></img>
           <Card>
             <h2>Client Oriented Studio</h2>
             <br></br>

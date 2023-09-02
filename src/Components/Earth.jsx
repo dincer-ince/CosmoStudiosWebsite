@@ -18,7 +18,7 @@ import { SphereGeometry } from 'three';
 
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/earth-transformed.glb')
+  const { nodes, materials } = useGLTF('./public/earth-transformed.glb')
   
   const earth=useRef();
 
@@ -83,4 +83,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/earth-transformed.glb')
+useGLTF.preload('./public/earth-transformed.glb')

@@ -46,6 +46,13 @@ const ListItem = styled.li`
   cursor: pointer;
 `;
 
+const LogoContainer = styled.div`
+  padding:20px;
+  background-color: white;
+  border-radius: 39% 61% 27% 73% / 63% 28% 72% 37%   ;
+  /* clip-path: ellipse(94% 30% at 26% 18%); */
+`
+
 const Icons = styled.div`
   display: flex;
   align-items: center;
@@ -63,22 +70,29 @@ const Button = styled.button`
   color: #ffffff !important;
 `;
 
+function hire(){
+  const element = document.getElementById("contact");
+    element.scrollIntoView();
+}
+
 const Navbar = () => {
   return (
     <Section>
       <Container>
         <Links>
-          <Logo src="./public/img/logo.png" />
-          <span>Cosmo Studios</span>
-          <List>
+          <LogoContainer>
+            <Logo src="./public/img/logo.png" />
+            <span style={{color:'black', fontWeight:'bold',marginLeft:'20px',fontSize:'20px'}}>Cosmo Studios</span>
+          </LogoContainer>
+          {/* <List>
             <ListItem>Home</ListItem>
             <ListItem>Studio</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
-          </List>
+          </List> */}
         </Links>
         <Icons>
-          <Button className='btn'>Hire Now</Button>
+          <Button onClick={hire} className='btn'>Hire Now</Button>
         </Icons>
       </Container>
     </Section>

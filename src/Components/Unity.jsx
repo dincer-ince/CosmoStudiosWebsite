@@ -12,7 +12,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/unity-transformed.glb')
+  const { nodes, materials } = useGLTF('./public/unity-transformed.glb')
 
   return (
     <group {...props} dispose={null}>
@@ -21,4 +21,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/unity-transformed.glb')
+useGLTF.preload('./public/unity-transformed.glb')

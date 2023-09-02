@@ -7,17 +7,21 @@ import { CameraControls, PerspectiveCamera } from '@react-three/drei';
 
 
 const Section = styled.div`
+@media (width>1400px) {
 height:100vh;
 
 scroll-snap-align: center;
+}
+
+@media (width<1400px) {
+height:200vh;
+}
+
 position: relative;
 `;
 const Container = styled.div`
   height:100%;
   width: 100%;
-  top:0px;
-  left:0px;
-  position:absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,11 +60,11 @@ function Rig() {
 
 const EstimateCard= styled.div`
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
   height:100%;
-  width: 1400px;
+  max-width: 1400px;
 
   display: flex;
   flex-direction: column;
@@ -105,7 +109,7 @@ function CardValues({align,text,title,textAlign,color}){
   if(align ==='end'){
     return(<Split>
       <PrincipleImg>
-      <img width={150} height={150} src='/img/octopus.png'/>
+      <img width={150} height={150} src='./public/img/octopus.png'/>
       </PrincipleImg>
       
     <Card color={color} text={textAlign} align={align}>
@@ -122,7 +126,7 @@ function CardValues({align,text,title,textAlign,color}){
       <p>{text}</p>
     </Card>
     <PrincipleImg>
-      <img width={150} height={150} src='/img/astronaut.gif'/>
+      <img width={150} height={150} src='./public/img/astronaut.gif'/>
       </PrincipleImg>
     </Split>)
   }

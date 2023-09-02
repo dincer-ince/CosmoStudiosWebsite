@@ -7,11 +7,16 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Section = styled.div`
 height: 100vh;
-  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media (width>1400px) {
+
+
+scroll-snap-align: center;
+}
+
   @media only screen and (max-width: 768px) {
     height: 200vh;
   }
@@ -114,7 +119,7 @@ const Landing = () => {
             <Left>
                 <Title>Think. Make. Solve.</Title>
                 <WhatWeDo>
-                    <Line src="/img/line.png" />
+                    <Line src="./public/img/line.png" />
                     <Subtitle>Cosmo Studios</Subtitle>
                 </WhatWeDo>
                 <Desc>We enjoy creating delightful, human-centered digital experiences.</Desc>
@@ -135,7 +140,7 @@ const Landing = () => {
                     </Sphere>
                     </Suspense>
                 </Canvas>
-                <Img src="/img/octopus.png"/>
+                <Img src="./public/img/octopus.png"/>
             </Right>
         </Container>
     </Section>
